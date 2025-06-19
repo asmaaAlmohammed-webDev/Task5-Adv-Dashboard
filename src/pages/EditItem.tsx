@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 import { type Item } from "./../types/Item";
+import TitleComponent from "../components/TitleComponent/TitleComponent";
 
 const EditItem = () => {
   const name = useRef<HTMLInputElement>(null);
@@ -60,7 +61,7 @@ const EditItem = () => {
   };
   return (
     <div className=" w-100 ">
-      <h2 className="fw-semibold fs-60 mt-b-76">ADD NEW ITEM</h2>
+      <TitleComponent title="Edit ITEM" />
       <Form onSubmit={sendData}>
         <Row>
           <Col>

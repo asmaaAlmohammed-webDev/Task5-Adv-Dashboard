@@ -3,6 +3,7 @@ import "./AddItem.css";
 import { useRef, useState, type FormEvent } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import TitleComponent from "../../components/TitleComponent/TitleComponent";
 
 const AddItem = () => {
   const name = useRef<HTMLInputElement>(null);
@@ -47,7 +48,8 @@ const AddItem = () => {
 
   return (
     <div className=" w-100 ">
-      <h2 className="fw-semibold fs-60 mt-b-76">ADD NEW ITEM</h2>
+      {/* <h2 className="fw-semibold fs-60 mt-b-76">ADD NEW ITEM</h2> */}
+      <TitleComponent title="ADD NEW ITEM" />
       <Form onSubmit={sendData}>
         <Row>
           <Col>
