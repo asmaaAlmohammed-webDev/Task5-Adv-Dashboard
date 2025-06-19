@@ -1,0 +1,11 @@
+.upload-item {
+  max-width: 547px !important;
+  height: 209px !important;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  padding: 32px 30px;
+}
+.upload-item:hover {
+  border-color: #ffc107;
+}
